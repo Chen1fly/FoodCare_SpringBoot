@@ -1,5 +1,5 @@
 # 新冠食疗/新冠食康/菜谱的SpringBoot后端  
-Android端在我的另一个仓库: ``` https://github.com/Chen1fly/FoodCare_App ```
+Android端在我的另一个仓库: ``` https://github.com/Chen1fly/FoodCare_App ```（需要两个搭配一起使用）
 ## 功能  
 主要处理登录注册患者状态查询等逻辑  
 ## 使用指南  
