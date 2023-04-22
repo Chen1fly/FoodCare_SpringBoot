@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.food.dao.UserDAO">
+    <!--food注册-->
+    <insert id="save" parameterType="User">
+        insert into usermessage (username,`password`,address,phone)
+        values(#{username},#{password},#{address},#{phone})
+
+    </insert>
+    <!--food登录-->
+    <select id="login" resultType="User">
+        select  * from usermessage
+        where username=#{username} and password=#{password}
+    </select>
+    <!--food查询状态-->
+    <select id="query" resultType="heal">
+        select  * from user_heal
+        where username=#{username}
+    </select>
+    <!--food查询all-->
+    <select id="check" resultType="User">
+        select  * from usermessage
+        where username=#{username}
+    </select>
+
+    <update id="bad">
+        UPDATE user_heal SET heal=1,period=#{period}
+        WHERE username=#{username};
+    </update>
+
+    <update id="better">
+        UPDATE user_heal SET heal=0,period=-1
+        WHERE username=#{username};
+    </update>
+
+</mapper>
