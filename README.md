@@ -1,4 +1,4 @@
-# FoodCare_SpringBoot是新冠食疗/新冠食康/菜谱的SpringBoot后端  
+# 新冠食疗/新冠食康/菜谱的SpringBoot后端  
 Android端在我的另一个仓库: ``` https://github.com/Chen1fly/FoodCare_App ```
 ## 功能  
 主要处理登录注册患者状态查询等逻辑  
